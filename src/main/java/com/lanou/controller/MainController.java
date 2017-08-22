@@ -3,6 +3,7 @@ package com.lanou.controller;
 import com.github.pagehelper.PageInfo;
 import com.lanou.bean.Message;
 import com.lanou.service.MessageService;
+import org.springframework.aop.support.AopUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -48,5 +49,11 @@ public class MainController {
     public String gittest(){
         return "bbb";
     }
+
+    public void  test(){
+        System.out.println("1111");
+    }
+
+
 
 }
