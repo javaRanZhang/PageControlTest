@@ -31,10 +31,10 @@ public class MainController {
     }
 
 //    传进来俩儿参数  在service包装回来一个PageInfo<Message> 所有的其他size": 1,
-//    "startRow": 2,
-//            "endRow": 2,
-//            "total": 3,
-//            "pages": 3,
+//    "startRow": 2
+//            "endRow": 2
+//            "total": 3
+//            "pages": 3
 //            "list 就出来了
     @RequestMapping("/pagetest")
     @ResponseBody
@@ -42,4 +42,11 @@ public class MainController {
                                       @RequestParam("pagesize") Integer pageSize) {
         return messageService.queryPage(pageNum, pageSize);
     }
+
+    @RequestMapping("/test")
+    @ResponseBody
+    public String gittest(){
+        return "bbb";
+    }
+
 }
