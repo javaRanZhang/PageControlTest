@@ -49,4 +49,11 @@ public class MainController {
         return "bbb";
     }
 
+    //编辑代码
+    @RequestMapping("/branch")
+    public String branchTest(){
+        return "2";
+    }
+
+
 }
