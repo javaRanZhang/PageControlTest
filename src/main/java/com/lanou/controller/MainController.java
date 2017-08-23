@@ -50,8 +50,18 @@ public class MainController {
         return "bbb";
     }
 
+
     public void  test(){
         System.out.println("1111");
+    }
+
+
+
+
+    //编辑代码
+    @RequestMapping("/branch")
+    public String branchTest(){
+        return "2";
     }
 
 
