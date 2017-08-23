@@ -63,6 +63,9 @@ public class MainController {
     public String branchTest(){
         return "2";
     }
+    public void test1(){
+        System.out.println(11111);
+    }
 
 
 
